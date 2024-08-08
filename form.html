@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário de cadastro</h1>
+    <form action="/" method="post" autocomplete="on" class="iformulario">
+        <p>
+            <label for="inome">NOME</label><br>
+            <input type="text" class="nome validar" id="inome" autocomplete="name" required>
+        </p>
+
+        <p>
+            <label for="isobrenome">SOBRENOME</label><br>
+            <input type="text" class="sobrenome validar" id="isobrenome" required>
+        </p>
+
+        <p>
+            <label for="icpf">CPF</label><br>
+            <input type="text" class="cpf validar" id="icpf" required>
+        </p>
+
+        <p>
+            <label for="iusuario">USUÁRIO</label><br>
+            <input type="text" class="usuario validar" id="iusuario" autocomplete="username" minlength="3" maxlength="12" placeholder="mínimo 3 caracteres" required>
+        </p>
+
+        <p>
+            <label for="isenha">SENHA</label><br>
+            <input type="password" class="senha validar" id="isenha" minlength="6" maxlength="12" placeholder="mínimo 6 caracteres" required>
+        </p>
+
+        <p>
+            <label for="isenha">REPETIR SENHA</label><br>
+            <input type="password" id="rpt-isenha" class="rpt-senha validar" minlength="6" maxlength="12" required>
+        </p>
+
+        <button type="submit">ENVIAR</button>
+
+        <div id="res"></div>
+    </form>
+    <script src="form.js"></script>
+    <script src="formCPF.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+* {
+    margin: 0px;
+    padding: 10px;;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #EBECEE;
+}
+
+h1 {
+    color: #181717cc;
+}
+label {
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-left: -9px;
+    color: #3c454ccc;
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+button {
+    background-color: #33AAE4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 90px;
+    margin: 10px;
+}
+
+.error-text {
+    color: red;
+}
+
+@media (max-width: 420px) {
+    h1 {
+        font-size: 7.1vw;
+    }
+}
